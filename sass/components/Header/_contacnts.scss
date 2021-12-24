@@ -22,9 +22,13 @@
     color: $primary-text-color;
 
     transition: color 250ms $cubic;
-}
-.contact-list__link:hover {
-    color: $active-color;
+
+    &:hover {
+        color: $active-color;
+    }
+    &:active {
+        color: $active-color;
+    }
 }
 
 .contact-list__icon {
