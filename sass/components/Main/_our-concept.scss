@@ -10,9 +10,7 @@
 }
 
 .our-concept__icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $secondary-bcg-color;
