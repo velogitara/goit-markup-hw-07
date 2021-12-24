@@ -19,6 +19,12 @@ body {
     list-style: none;
 }
 
+.preview-ul.list,
+.section-title-list.list,
+.site-nav-ul.list,
+.list {
+    padding-left: 0;
+}
 a {
     text-decoration: none;
     outline: none;
