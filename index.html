@@ -10,13 +10,6 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
 
         <link rel="stylesheet" href="./css/main.min.css" />
         <title>goit-markup-hw-07</title>
@@ -74,7 +67,7 @@
                         Эффективные решения<br />
                         для вашего бизнеса
                     </h1>
-                    <button type="button" class="hero_button" data-modal-open>
+                    <button type="button" class="hero__button" data-modal-open>
                         Заказать услугу
                     </button>
                 </div>
@@ -138,50 +131,56 @@
                 </div>
             </section>
             <!------------------------------------------- Чем мы занимаемся -------------------------------------->
-            <section class="section section-examples">
+            <section class="examples section">
                 <div class="container">
-                    <h2 class="section-title">Чем мы занимаемся</h2>
-                    <ul class="preview-ul list">
+                    <h2 class="examples__title">Чем мы занимаемся</h2>
+                    <ul class="examples__list">
                         <li>
-                            <div class="preview-thumb">
+                            <div class="examples__thumb">
                                 <img src="./images/box1.jpg" alt="набирает код" width="370" />
-                                <div class="thumb-description"><p>Десктопные приложения</p></div>
+                                <div class="examples__descPosition">
+                                    <p class="examples__description">Десктопные приложения</p>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <div class="preview-thumb">
+                            <div class="examples__thumb">
                                 <img
                                     src="./images/box2.jpg"
                                     alt=" делает оптимизацию к мобильным устройствам"
                                     width="370"
                                 />
-                                <div class="thumb-description"><p>Мобильные приложения</p></div>
+                                <div class="examples__descPosition">
+                                    <p class="examples__description">Мобильные приложения</p>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <div class="preview-thumb">
+                            <div class="examples__thumb">
                                 <img src="./images/box3.jpg" alt="выбор цветовой гаммы" />
-                                <div class="thumb-description"><p>Дизайнерские решения</p></div>
+                                <div class="examples__descPosition">
+                                    <p class="examples__description">Дизайнерские решения</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
             <!-- -------------------------------------- Наша команда  ----------------------------------------- -->
-            <section class="section ourteam-section">
+            <section class="section ourTeam">
                 <div class="container">
-                    <h2 class="section-title">Наша команда</h2>
-                    <ul class="section-title-list list">
+                    <h2 class="ourTeam__title">Наша команда</h2>
+                    <ul class="ourTeam__list list">
                         <li>
                             <img
                                 src="./images/OurTeam1.jpg"
                                 alt="фото Игорь Демьяненко"
                                 width="270"
                             />
-                            <div class="section-title-description">
-                                <h3>Игорь Демьяненко</h3>
-                                <p>Product Designer</p>
-                                <ul class="section-title-links">
+                            <div class="ourTeam__description">
+                                <h3 class="ourTeam__name">Игорь Демьяненко</h3>
+                                <p class="ourTeam__career">Product Designer</p>
+                                <ul class="ourTeam__socials">
                                     <li class="social-links-items">
                                         <a href="##" class="social-links"
                                             ><svg class="icon" width="20" height="20">
@@ -416,7 +415,7 @@
                         >
                     </address>
                 </div>
-                <div class="footer-sotial-links">
+                <div class="footer-social-links">
                     <h2 class="footer-section-title">Присоединяйтесь</h2>
                     <ul class="footer-section-list">
                         <li>

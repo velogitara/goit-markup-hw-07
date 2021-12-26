@@ -18,7 +18,7 @@
     height: 120px;
 }
 
-.our-concept > .our-concept__item + .our-concept__item {
+.our-concept__item:not(:first-child) {
     margin-left: 30px;
 }
 
