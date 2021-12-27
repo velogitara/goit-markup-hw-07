@@ -39,7 +39,7 @@
     transition: background-color 250ms $cubic, transform 250ms $cubic;
     transform-style: preserve-3d;
     &:focus,
-    :hover {
+    &:hover {
         background: #188ce8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
