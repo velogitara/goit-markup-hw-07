@@ -23,7 +23,12 @@
         "../sass/components/Main/_our-team.scss",
         "../sass/components/Main/_our-clients.scss",
         "../sass/components/backdrop/_module.scss",
-        "../sass/components/backdrop/_backdrop.scss"
+        "../sass/components/backdrop/_backdrop.scss",
+        "../sass/components/footer/_module.scss",
+        "../sass/components/footer/_logo.scss",
+        "../sass/components/footer/_contacts.scss",
+        "../sass/components/footer/_socials.scss",
+        "../sass/components/footer/_subscribe.scss"
     ],
     "names": [],
     "file": "main.min.css"
