@@ -1,0 +1,49 @@
+.address-link {
+    display: flex;
+    flex-direction: column;
+}
+.address-link > a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.address-link > a:not(:first-child) {
+    margin-top: 9px;
+}
+.current-address {
+    color: $white-color;
+    text-decoration: none;
+    outline: none;
+
+    transition: color 250ms $cubic;
+}
+
+.current-address:focus,
+.current-address:active,
+.current-address:hover {
+    color: $active-color;
+    background-color: inherit;
+}
+
+.address-section {
+    color: $secondary-text-color;
+    text-decoration: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $cubic;
+}
+
+.address-section:hover,
+.address-section:focus {
+    color: $active-color;
+    background-color: inherit;
+}
+
+.address-section-opacity {
+    color: rgba(255, 255, 255, 0.6);
+}
