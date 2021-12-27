@@ -22,49 +22,6 @@
 
 /*  ============================== Our Clients ========================== */
 
-.clients {
-    text-align: center;
-}
-.clients > .title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.1666;
-    margin-bottom: 50px;
-}
-.clients-list {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-.clients-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 92px;
-    width: 170px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-
-    transition: border-color 250ms var(--cubic), transform 250ms var(--cubic);
-}
-
-.clients-links-svg {
-    fill: var(--icon-silent-color);
-    transition: fill 250ms var(--cubic);
-}
-
-.clients-links:hover,
-.clients-links:focus {
-    border-color: var(--active-color);
-}
-.clients-links:hover .clients-links-svg,
-.clients-links:focus .clients-links-svg {
-    fill: var(--active-color);
-}
-.clients-links:active .clients-links-svg {
-    transform: scale(0.95);
-}
-
 /* .clients-links.icon-first {
     background-image: url('../images/ya&co-logo.svg');
 }
