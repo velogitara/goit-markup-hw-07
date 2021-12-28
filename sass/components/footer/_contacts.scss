@@ -1,32 +1,36 @@
 .address-link {
     display: flex;
     flex-direction: column;
+    &--style {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    &--style:not(:first-child) {
+        margin-top: 9px;
+    }
 }
-.address-link > a {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-}
-.address-link > a:not(:first-child) {
-    margin-top: 9px;
-}
-.current-address {
+
+// .address-link > a:not(:first-child) {
+//     margin-top: 9px;
+// }
+.address-link__current {
     color: $white-color;
     text-decoration: none;
     outline: none;
 
     transition: color 250ms $cubic;
+
+    &:focus,
+    &:active,
+    &:hover {
+        color: $active-color;
+        background-color: inherit;
+    }
 }
 
-.current-address:focus,
-.current-address:active,
-.current-address:hover {
-    color: $active-color;
-    background-color: inherit;
-}
-
-.address-section {
+.address-link__contact {
     color: $secondary-text-color;
     text-decoration: none;
     outline: none;
@@ -36,14 +40,14 @@
     letter-spacing: 0.02em;
 
     transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        color: $active-color;
+        background-color: inherit;
+    }
 }
 
-.address-section:hover,
-.address-section:focus {
-    color: $active-color;
-    background-color: inherit;
-}
-
-.address-section-opacity {
+.address-link--opacity {
     color: rgba(255, 255, 255, 0.6);
 }

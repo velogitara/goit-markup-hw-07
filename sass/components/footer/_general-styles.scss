@@ -5,6 +5,6 @@
     color: $primary-text-color;
 }
 
-.footer-section-container {
+.footer-section__container {
     @include centeredFlex($align-item: baseline, $jfc: space-between);
 }

@@ -1,7 +1,7 @@
-.footer-social-links {
+.footerSocial {
     margin-left: 70px;
 }
-.footer-section-title {
+.footerSocial__title {
     color: $white-color;
     font-weight: bold;
     font-size: 14px;
@@ -10,12 +10,16 @@
 
     text-transform: uppercase;
 }
-.footer-section-list {
+.footerSocial__list {
     display: flex;
     margin-top: 20px;
     align-content: center;
+
+    & li:nth-child(n + 2) {
+        margin-left: 10px;
+    }
 }
-.footer-section-links {
+.footerSocial__links {
     @include centeredFlex;
     background-color: rgba(255, 255, 255, 0.1);
     /* outline: 1px solid tomato; */
@@ -24,23 +28,21 @@
     border-radius: 50%;
 
     transition: background-color 250ms $cubic, transform 250ms $cubic;
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:hover .footerSocial_icon,
+    &:focus .footerSocial_icon {
+        fill: $white-color;
+    }
 }
 
-.icon-footer {
+.footerSocial_icon {
     fill: $white-color;
-}
-.footer-section-list li:nth-child(n + 2) {
-    margin-left: 10px;
-}
-
-.footer-section-links:hover,
-.footer-section-links:focus {
-    background-color: $active-color;
-}
-.footer-section-links:hover > .icon-footer,
-.footer-section-links:focus > .icon-footer {
-    fill: $white-color;
-}
-.footer-section-links:active {
-    transform: scale(0.95);
 }

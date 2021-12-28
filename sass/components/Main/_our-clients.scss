@@ -20,21 +20,21 @@
     border-radius: 4px;
 
     transition: border-color 250ms $cubic, transform 250ms $cubic;
+    &:hover,
+    &:focus {
+        border-color: $active-color;
+    }
+
+    &:hover .clients__svg,
+    &:focus .clients__svg {
+        fill: $active-color;
+    }
+    &:active .clients__svg {
+        transform: scale(0.95);
+    }
 }
 
 .clients__svg {
     fill: $icon-silent-color;
     transition: fill 250ms $cubic;
-}
-
-.clients__links:hover,
-.clients__links:focus {
-    border-color: $active-color;
-}
-.clients__links:hover .clients__svg,
-.clients__links:focus .clients__svg {
-    fill: $active-color;
-}
-.clients__links:active .clients__svg {
-    transform: scale(0.95);
 }

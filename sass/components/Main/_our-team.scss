@@ -61,22 +61,23 @@
     background-repeat: no-repeat;
 
     transition: background-color 250ms $cubic, transform 250ms $cubic;
-}
-.ourTeam__links:hover,
-.ourTeam__links:focus {
-    background-color: $active-color;
-}
 
-.ourTeam__links:active {
-    transform: scale(0.95);
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:hover .ourTeam__icon,
+    &:focus .ourTeam__icon {
+        fill: $white-color;
+    }
 }
 
 .ourTeam__icon {
     fill: $icon-silent-color;
     transition: fill 250ms $cubic;
-}
-
-.ourTeam__links:hover .ourTeam__icon,
-.ourTeam__links:focus .ourTeam__icon {
-    fill: $white-color;
 }
