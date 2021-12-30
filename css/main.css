@@ -1567,12 +1567,12 @@ input[type='text']::placeholder {
   border-right: 1px solid #e5e5e5;
 }
 
-.list-element-thumb {
+.thumbList__imgContainer {
   position: relative;
   overflow: hidden;
 }
 
-.thumb-list-description {
+.thumbList__descriptionContainer {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   display: -webkit-box;
@@ -1598,19 +1598,19 @@ input[type='text']::placeholder {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.thumbList__element:hover .thumb-list-description {
+.thumbList__element:hover .thumbList__descriptionContainer {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.thumb-list-description > p {
+.thumbList__descriptionContainer > p {
   color: #ffffff;
   opacity: 0;
   -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.thumbList__element:hover .thumb-list-description > p {
+.thumbList__element:hover .thumbList__descriptionContainer > p {
   opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

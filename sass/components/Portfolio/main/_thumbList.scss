@@ -40,12 +40,12 @@
     border-right: 1px solid getColor('primary-bcg-color');
 }
 
-.list-element-thumb {
+.thumbList__imgContainer {
     position: relative;
     overflow: hidden;
 }
 
-.thumb-list-description {
+.thumbList__descriptionContainer {
     position: absolute;
     background: rgba(33, 150, 243, 0.9);
     @include centeredFlex;
@@ -60,16 +60,16 @@
     transition: transform 250ms $cubic;
 }
 
-.thumbList__element:hover .thumb-list-description {
+.thumbList__element:hover .thumbList__descriptionContainer {
     transform: translateY(0);
 }
 
-.thumb-list-description > p {
+.thumbList__descriptionContainer > p {
     color: getColor('white-color');
     opacity: 0;
     transition: opacity 500ms $cubic;
 }
 
-.thumbList__element:hover .thumb-list-description > p {
+.thumbList__element:hover .thumbList__descriptionContainer > p {
     opacity: 1;
 }
