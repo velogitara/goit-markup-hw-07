@@ -95,7 +95,7 @@ input[type='text']::placeholder {
         height: 24px;
         background-image: url(../images/icon-send.svg);
         transform: translateY(calc(-50% + 40px));
-        transition: transform 500ms $cubic;
+        transition: transform 250ms $cubic;
     }
 
     &:hover::after {
